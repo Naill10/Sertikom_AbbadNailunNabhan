@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+.hero{
+   background-color: #020c19;
+   width: 100%;
+    height: 100vh ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#photos img {
+    margin-left: 70px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 389px;) {
+    #photos img {
+        margin-left: 70px;
+    }
+}
