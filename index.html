@@ -23,29 +23,29 @@
 
  <!-- navbar -->
  <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
-    <div class="container">
-      <a class="navbar " href="#"><img src="Asset/img/ChatGPT Image 19 Nov 2025, 10.52.14.png" alt="" width="100px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-4 mb-lg-0  ">
-          <li class="nav-item">
-            <a class="nav-link active mx-2"  aria-current="page" href="#">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#layanan ">Layanan Kami</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#tentang">Tentang Kami</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#hubungi ">Hubungi Kami</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link mx-2" href="#FAQ ">FAQ</a>
-          </li>
-        </ul>
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4 " href="#"><img src="Asset/icon/p.png" alt="" width="130px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active mx-1"  aria-current="page" href="#">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-1" href="#paket " id="btn">Layanan Kami</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-1" href="#tentang">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-1" href="#Hubungi ">Hubungi Kami</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link mx-1" href="#FAQ ">FAQ</a>
+        </li>
+      </ul>
          <div class="text-light fs-4    ">
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-whatsapp"></i>
@@ -62,13 +62,13 @@
                     <div class="col  text-light flex-row">
                         <h1>Visi Digital – Mitra Solusi IT untuk Transformasi Digital Bisnis.</h1>
                         <p class="my-4">“Menjadi mitra tepercaya dalam menyediakan solusi IT inovatif yang mempercepat transformasi digital dan pertumbuhan bisnis Anda.”    </p>
-                        <div class="fs-3 ms-3">  
-                        <button type="button" class="btn btn-primary btn-md me-3 ">Hubungi Kami</button>
-                        <button type="button" class="btn btn-outline-primary btn-md">Konsultasi Sekarang</button>
+                        <div id="hero-btn" class="fs-2 ms-3 d-flex">  
+                        <button type="button" class="btn btn-primary btn-md me-3 fs-5">Hubungi Kami</button>
+                        <button id="btn-konsul" type="button" class="btn btn-outline-primary btn-md fs-5">Konsultasi Sekarang</button>
                         </div>  
                     </div>
                     <div id="photos" class="col pe-5 mt-3">
-                        <img src="Asset/img/gambar.png" alt="" width="70%">
+                        <img src="Asset/img/gambar.png" alt="" width="90%">
                     </div>
                 </div>
             </div>
@@ -77,13 +77,150 @@
        <!-- hero -->
             <!-- layanan kami -->
         
+  <section id="paket" class="" >
+    <div class="container">
+      <div class="section-title">
+        <h2>Layanan Kami</h2>
+        <p>Pilih layanan untuk Kebutuhan Bisnis Anda</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- laynan 1 -->
+        <div class="col-12 col-md-6 col-lg-4 ">
+          <div class="card pkg-card h-100">
+            <div class="card-body  border-warning ">
+              <div class=" justify-content-between align-items-start ">
+                <h4 class="text-light">1. Custom Software <br>Development</h4>
+                <div class="teks">
+                <p class="text-light">Solusi perangkat lunak khusus yang dibangun sesuai kebutuhan proses bisnis Anda. Mulai dari sistem manajemen internal, aplikasi enterprise, hingga integrasi API.</p>
+                </div>
+                   <p class="text-light">Cocok untuk: perusahaan yang membutuhkan sistem berbeda dari produk “siap pakai”.</p>
+                  <h5 class="text-warning">Harga :
+                     IDR 50.000.000 – 500.000.000+ <br>
+                    (based on complexity, fitur, dan integrasi)</h5>
+                <button id="btn_layanan" class="btn btn-outline-primary btn-sm mt-2" >Paket 1</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- laynan 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card pkg-card h-100 ">
+            <div class="card-body flex-column">
+              <div class=" justify-content-between align-items-start mb-3">
+                <h4 class="text-light">2. Web & Mobile App Development</h4>
+                  <div class="teks">
+                  <p class="text-light">Pembuatan aplikasi website dan mobile (Android/iOS) dengan desain modern, performa cepat, dan dapat dikembangkan skala besar.</p>
+                  </div>
+                  <p class="text-light">Cocok untuk: digital product, marketplace, booking system, portal layanan, dsb.</p>
+                    <h5 class="text-warning">Harga:
+                       IDR 5.000.000 – 10.000.000+
+                      (tergantung platform, UI/UX, modularitas, dan backend)</h5>
+                <button id="btn_layanan" class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Umroh Gold" data-price="Rp 36.500.000">Paket 2</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <!-- Layanan 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card pkg-card h-100">
+            <div class="card-body flex-column">
+              <div class="justify-content-between align-items-start mb-3">
+                <h4 class="text-light">3. Cloud Infrastructure & DevOps Services</h4>
+                  <div class="teks">
+                  <p class="text-light">Menyediakan setup cloud, migrasi, optimasi server, automation pipeline, hingga monitoring 24/7.</p>
+                  </div>
+                  <p class="text-light">Cocok untuk: bisnis yang membutuhkan uptime tinggi dan skalabilitas cepat.</p>
+                    <h5 class="text-warning">Harga:
+                       IDR 5.000.000 – 15.000.000 +
+                      • Setup cloud + konfigurasi <br>
+                      • Monitoring & maintenance opsional bulanan</h5>
+                <button id="btn_layanan" class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Haji Reguler" data-price="Rp 78.000.000">Paket 3</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Layanan 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card pkg-card h-100 ">
+            <div class="card-body  flex-column">
+              <div class=" justify-content-between align-items-start mb-3">
+                <h4 class="text-light">4. Cybersecurity & Data <br>Protection</h4>
+                  <div class="teks">
+                  <p class="text-light">Layanan keamanan digital seperti pengecekan kerentanan (penetration testing), audit sistem, proteksi data, dan compliance standar internasional.</p>
+                  </div>
+                  <p class="text-light">Cocok untuk: perusahaan yang membutuhkan proteksi data sensitif.</p>
+                    <h5 class="text-warning">Harga:
+                       IDR 8.000.000 – 12.000.000
+                      (bergantung tingkat risiko, perangkat, dan ruang lingkup sistem)</h5>
+                <button id="btn_layanan" class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Haji VIP" data-price="Rp 145.000.000">Paket 4</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- Layanan 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card pkg-card h-100">
+            <div class="card-body  flex-column">
+              <div class=" justify-content-between align-items-start mb-3">
+                <h4 class="text-light">5. Digital Transformation & IT Consulting</h4>
+                <div class="teks">
+                <p class="text-light">Pendampingan strategis untuk menyusun roadmap digital, efisiensi proses, integrasi teknologi, dan peningkatan produktivitas operasional.</p>
+                </div>
+                <p class="text-light">Cocok untuk: perusahaan yang ingin melakukan modernisasi teknologi.</p>
+                  <h5 class="text-warning">Harga:
+                     IDR 2.500.000 – 15.000.000 / sesi konsultasi
+                    atau
+                     Project Konsultasi: mulai IDR 30.000.000+</h5>
+                <button id="btn_layanan" class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#detailModal" data-title="Umroh Plus Ziarah" data-price="Rp 24.900.000">Paket 5</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+       <!-- layanan kami -->
+      <!-- Tentang Kami -->
+       <div class="judul_ttng">
+        <div class="container_tentang">
+          <div class="Tentang_layanan">
+        <div class="row">
+          <div class="col my-5 text-center text-light">
+             <h2>Tentang Kami</h2>
+          </div>
+        </div>
+     
+      <div class="TTng" id="tentang">
+        <div class="row">
+          <div class="col">
+            <img src="Asset/img/optimized.content___mindos-vision-and-mission-company-vision-and-mission-company-vision-company-mission__60657df299c21__100 (1).jpg" alt="" width="700px" class="gambar">
+          </div>
+          <div class="col text-light ">
+            <h5 class="taz"> <i class="fa-solid fa-arrow-right"></i>    Visi Digital adalah perusahaan IT Solution yang berdedikasi <br> memberikan solusi  teknologi mutakhir untuk membantu bisnis <br> berkembang di era digital. Kami menggabungkan keahlian teknis, <br> strategi transformasi digital, dan pemahaman mendalam
+           tentang <br> kebutuhan bisnis untuk menciptakan sistem yang <br>efisien, aman, dan scalable.</h5>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+      <!-- Tentang Kami -->
 
 
 
-        <!-- layanan kami -->
 
 
 
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+       <script src="dist/js/script.js"></script>
 </body>
+
+   
 </html>
