@@ -28,23 +28,30 @@
 }
 
 .judul_ttng {
-      background-color: #0b1727;
-      padding-top: 0px;
+      background-color: #00081d;
+      padding-top: 150px;
 }
 #paket {
     padding-top: 100px ;
+   
 }
 .taz{
     padding: 10px;
-    line-height: 50px;
+    line-height: 40px;
+    text-align: start;
 }
 
 .gambar{
     margin-bottom: auto;
-    margin-left: 250px;
-    border-radius: 10px;
-    padding-right: 5px;
+   
+    border-radius: 12px;
+    padding-right: 4px;
+    transition: 0.35s ease;
+    width: 650px;
+    font-weight: 300;
 }
+  
+
 
 #navbar.scrolled {
     background-color:rgb(15, 40, 87); 
@@ -87,8 +94,11 @@
     background-color: #177bff;
     color: white;
   }
+  .swiper-slide {
+    border: 2px solid ;
+  }
   #paket{
-    background-color: #0b1727;
+    background-color: #00081d
   }
   #btn_layanan {
     justify-content: center;
@@ -99,7 +109,8 @@
     color: #ffffff;
 }
 #btn-konsul {
-    margin-left: 0;
+    margin-left: -10px;
+
 }
 #hero-btn {
     gap: 60px;
@@ -113,6 +124,13 @@
     #photos img {
         margin-left: 40px;
     }
+    .gambar{
+      margin-right: 30px;
+      width: 300px;
+    }
+    .taz{
+      font-size: smaller;
+    }
   }
   @media only screen and (max-width: 900px) {
     #hero-btn {
@@ -123,3 +141,26 @@
         margin-left: 40px;
     }
   }
+  @media screen and (max-width:475px) {
+    .perusahaan img {
+        width: 80%;
+    }
+    .logo2 {
+        margin-top: 20px;
+    }
+    .services {
+        text-align: center;
+    }
+    .services img {
+        margin-top: 10px;
+    }
+    .booking p {
+        display: flex;
+        text-align: start;
+        margin-left: -60px;
+    }
+    .services img {
+        width: 180px;
+        height: 300px;
+    }
+}
