@@ -6,7 +6,7 @@ body{
 }
 .hero{
    background-image: url(../../Asset/);
-   background-color: #001542;
+   background-color: #020c19;
    
    width: 100%;
     height: 100vh ;
@@ -14,6 +14,99 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+.visi {
+  color: #0d6efd;
+}
+.solusi {
+  color: #0d6efd;
+}
+.text ul li{
+  color: rgb(255, 255, 255);
+  list-style: none;
+  white-space: nowrap;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: -35px;
+}
+.text_2 ul li {
+  color: rgb(255, 255, 255);
+  list-style: none;
+  white-space: nowrap;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: -35px;
+}
+.fa-regular {
+  color: #0d6efd;
+}
+.it_support {
+  border-radius: 10px;
+  background-color: #15293f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.it_support:hover {
+  transform: translateY(-5px);
+}
+.web-programing {
+  border-radius: 10px;
+  background-color: #15293f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.web-programing:hover {
+  transform: translateY(-5px);
+}
+.cloud-service {
+  border-radius: 10px;
+  background-color: #15293f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.cloud-service:hover {
+  transform: translateY(-5px);
+}
+.cyber-security {
+  border-radius: 10px;
+  background-color: #15293f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.cyber-security:hover {
+  transform: translateY(-5px);
+}
+.software {
+  border-radius: 10px;
+  background-color: #15293f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.software:hover {
+  transform: translateY(-5px);
+}
+.consulting {
+   border-radius: 10px;
+  background-color: #15293f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.consulting:hover {
+  transform: translateY(-5px);
+}
+  
+
 #photos img {
     margin-left: 70px;
     border-radius: 10px;
@@ -60,6 +153,8 @@ body{
 
 .gambar:hover {
   transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(104, 152, 255, 0.908);
+
 }
 .perusahaan {
   background-color: #00081d;
@@ -68,8 +163,100 @@ body{
 .tambahan i {
   color: #fff022;
 }
-  
-
+.hero_badge {
+  font-size: 14px;
+  margin-bottom: 20px;
+ background-color: #05192e;
+ border: 1px solid;
+ border-color: #0a3056;
+ padding: 8px 16px;
+ width: 200px;
+ border-radius: 50px;
+ color: #0d6efd;
+ transition: all 0.3s ease;
+}
+.hero_badge:hover {
+  transform: translateY(-8px);
+}
+.judul_hero{
+  transform: translateX(-50px);
+  opacity: 0;
+  animation: slideIn 1s forwards;
+}
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.tagline {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.photos {
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(20); }
+  50% { transform: translateY(-1px); }
+}
+.card_1 {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+.card_2 {
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+.card_3 {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+.card_4 {
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+.card_5 {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+.card_6 {
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+.teks {
+  color: rgb(182, 180, 180);
+}  
+.teks_2 {
+  color: rgb(182, 180, 180);
+  margin-bottom: 35px;
+}
+.teks_3 {
+  color: rgb(182, 180, 180);
+}
 
 #navbar.scrolled {
     background-color:rgb(15, 40, 87); 
@@ -147,7 +334,7 @@ body{
   #btn_layanan {
     justify-content: center;
     text-align: center  ;
-    margin-left: 140px
+    margin-left: 14px;
   }
 .bi li {
     color: #ffffff;
@@ -161,7 +348,8 @@ body{
 }
 .form {
   background-color: #00081d;
-
+  
+  display: flex;
 }
 
 
@@ -176,6 +364,12 @@ body{
   padding: 10px;
   border-radius: 10px;
   text-align: start;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.visi_misi:hover {
+  transform: translateX(8px);
+  box-shadow: 0 10px 25px rgba(104, 152, 255, 0.908);
+
 }
 .fa-solid{
   color: yellow;
@@ -186,6 +380,7 @@ body{
  font-family: "poppins" sans-serif;
  
 }
+
 #piw {
   background-color: #101c2d;
 border-radius: 10px;
