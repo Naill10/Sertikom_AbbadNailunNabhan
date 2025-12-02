@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: "poppins" sans-serif;
 }
 body{
   background-color: #00081d;
@@ -130,7 +131,27 @@ body{
 .navbar-collapse ul li{
   font-family: Arial, Helvetica, sans-serif ;
   font-size: larger;
+  transition: all 0.5s ease;
 }
+.nav-link a{
+  position: relative;
+  color: gray;
+  font-weight: 500;
+  padding: 6px 12px;
+  transition: color 0.3s ease;
+}
+.nav-link a::after{
+ contain: "";
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ width: 0%;
+ height: 2px;
+ background-color: #0d6efd;
+ transform: translateX(-50%);
+ transition: width 0.35s ease-out ;
+}
+
 .Tentang_layanan {
         padding: 10px 10px;
     border-color: #ffffff;
@@ -147,9 +168,27 @@ body{
 }
 .taz{
     padding: 10px;
-    line-height: 40px;
+    line-height: 35px;
     text-align: start;
+     display: inline-block;
+      font-size: 20px;
+      animation: slideRight 1s ease forwards;
+  opacity: 0;
 }
+.text_lis {
+  line-height: 35px;
+}
+@keyframes slideRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 .gambar {
   border: 2px solid ;
@@ -417,7 +456,41 @@ body{
   
   display: flex;
 }
+.hub-right-side {
+  font-size:20px;
 
+}
+.hub-right-side img{
+  width: 100px;
+  margin-left: 100px;
+  animation: float  2s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+.email {
+  color: #ffffff ;
+  transition: all 0.3s ease;
+}
+.email:hover {
+  color:rgb(255, 238, 0)  ;
+}
+.wa {
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease ;
+}
+.wa:hover {
+  color: rgb(255, 238, 0) ;
+}
+.hub-left-side {
+  font-size: 20px;
+  margin-top: 100px;
+  text-align: center;
+}
+.Daftar_location {
+  border-radius: 10px;
+}
 
 .poto {
   border-radius: 15px;
@@ -437,6 +510,7 @@ body{
   box-shadow: 0 10px 25px rgba(104, 152, 255, 0.908);
 
 }
+
 .fa-solid{
   color: yellow;
 }
@@ -450,13 +524,17 @@ body{
 #piw {
   background-color: #101c2d;
 border-radius: 10px;
+max-width: 1300px;   /* lebar box dibatasi, bisa kamu kecilkan lagi */
+margin: 0 auto;     /* biar tetap di tengah */
+padding: 50px;
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.05);
 }
-.fa-instagram {
-  color: #ffffff;
+.logo_email img {
+  max-width: 100%;
+  width: 20px;
 }
-.fa-whatsapp {
-  color: rgb(9, 196, 9);
-}
+
 .footer img {
   padding: 5px;
   border-radius: 5px;
@@ -476,6 +554,12 @@ border-radius: 10px;
   margin-top: 10px;
   margin-left: 10px;
 }
+.list_lagganan {
+ padding-right: 20px;
+}
+.button {
+  margin-left: 15px;
+}
 @media only screen and (max-width: 600px) {
     #hero-btn {
         flex-direction: column;
@@ -491,6 +575,7 @@ border-radius: 10px;
     .taz{
       font-size: smaller;
     }
+   
   
     
   }
@@ -500,7 +585,8 @@ border-radius: 10px;
         gap: 10px;
     }
     #photos img {
-        margin-left: 40px;
+        margin-left: 150px;
+        width: 400px;
     } 
      .text ul li{
       font-size: 15px;
@@ -509,6 +595,15 @@ border-radius: 10px;
     .gambar {
       justify-content: center;
       margin-right: 60px;
+    }
+    .button_hero {
+      text-align: center;
+    }
+    .Daftar_location {
+      margin-left: 100px;
+    }
+    .hub-right-side {
+      margin-left: 160px;
     }
 
   }
@@ -544,10 +639,24 @@ border-radius: 10px;
       width:100%;
     
     }
+    .hero_badge {
+      margin-top: 100px;
+      
+    }
     
     #hero-btn a {
       
       text-align: center;
 
     }
+    .Daftar_location {
+   width: 300px;
+  
 }
+
+.hub-right-side{
+  font-size: 15px
+}
+}
+
+

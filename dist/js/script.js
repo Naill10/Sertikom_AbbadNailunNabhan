@@ -80,3 +80,8 @@ else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
         // kamu bisa ganti alert dengan WhatsApp / Firebase / API kirim email
     }
 });
+
+
+
+
+  
