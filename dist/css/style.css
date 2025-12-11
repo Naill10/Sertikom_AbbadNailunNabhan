@@ -560,6 +560,17 @@ background: rgba(255, 255, 255, 0.05);
 .button {
   margin-left: 15px;
 }
+.text_list ul li{
+  color: rgb(255, 255, 255);
+  list-style: none;
+  white-space: nowrap;
+  font-size: 15+px;
+  line-height: 30px;
+  margin-left: -35px;
+  
+  word-wrap: break-word;
+  word-break: break-word;
+}
 @media only screen and (max-width: 600px) {
     #hero-btn {
         flex-direction: column;
@@ -589,7 +600,7 @@ background: rgba(255, 255, 255, 0.05);
         width: 400px;
     } 
      .text ul li{
-      font-size: 15px;
+      font-size: 1px;
      
     }
     .gambar {
